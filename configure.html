@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <meta Content= "text/html" charset="utf-8"> -->
+		<title>Configure Form </title>
+		<style>
+		.login-form {
+			width: 350px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.login-form input[name="CurrentUsername"],
+		.login-form input[name="NewUsername"],
+		.login-form input[name="NewPassword"],
+		.login-form input[name="ConfirmPassword"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+
+
+		
+
+
+		</style>
+	</head>
+	<body>
+		<div class="login-form">
+			<h1>Configure Id & Password</h1>
+			<form action="auth" method="POST">
+				<input type="text" name="CurrentUsername" placeholder="Current Username" required>
+				<input type="text" name="NewUsername" placeholder="New Username" required>
+				<input type="password" name="NewPassword" placeholder="New Password" required>
+				<input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+				<input type="submit">
+				
+			</form>
+		</div>
+	</body>
+</html>
